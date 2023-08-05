@@ -16,7 +16,7 @@ const common = {
   line_ending: /[\n\r\u{2028}\u{0085}]|(\r\n)|(\r\u{0085})/,
   any_char: /.|[\r\n\u{85}\u{2028}\u{2029}]/,
 
-  symbol_element: /[^ \r\n\t\f\v\p{Zs}\p{Zl}\p{Zp}#;"'`,(){}\[\]\\|]/,
+  symbol_element: /[^ \r\n\t\f\v\p{Zs}\p{Zl}\p{Zp};"'`,(){}\[\]\\|]/,
 };
 
 const r5rs = {
