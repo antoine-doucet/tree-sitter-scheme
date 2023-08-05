@@ -190,7 +190,7 @@ module.exports = grammar({
       $.unsyntax,
       $.unsyntax_splicing,
 
-      $.keyword
+      $.keyword,
       $.special_token),
 
     // simple datum {{{
