@@ -190,7 +190,8 @@ module.exports = grammar({
       $.unsyntax,
       $.unsyntax_splicing,
 
-      $.keyword),
+      $.keyword
+      $.special_token),
 
     // simple datum {{{
 
@@ -239,6 +240,12 @@ module.exports = grammar({
       token(
         seq(
           "#:",
+          hidden_node.symbol)),
+
+    special_token: _ =>
+      token(
+        seq(
+          "#!",
           hidden_node.symbol)),
 
     // simple datum }}}
